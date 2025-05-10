@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Singh - Portfolio</title>
+    <link rel="stylesheet" href="../PMS/style.css">
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+        .card {
+            background: #000;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px;
+            position: relative;
+            color: #fff;
+            box-shadow: 0 0 20px rgba(41, 151, 255, 0.5);
+            animation: glowAnimation 2s infinite alternate;
+        }
+
+        @keyframes glowAnimation {
+            from {
+                box-shadow: 0 0 20px rgba(41, 151, 255, 0.5);
+            }
+            to {
+                box-shadow: 0 0 40px rgba(41, 151, 255, 0.8);
+            }
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .project {
+            background: #000;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px 0;
+            position: relative;
+            color: #fff;
+            box-shadow: 0 0 20px rgba(41, 151, 255, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 30px rgba(41, 151, 255, 0.8);
+        }
+
+        .project a {
+            color: #2997ff;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin: 40px 0;
+            font-size: 3em;
+        }
+
+        h2 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            list-style: none;
+        }
+
+        .contact-info a {
+            color: #2997ff;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Prince Singh</h1>
+
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Prince Singh, a passionate software developer with a keen interest in creating elegant solutions to complex problems. 
+                With a strong foundation in computer science and a drive for continuous learning, I specialize in web development and software engineering. 
+                I believe in writing clean, efficient code and creating user-friendly applications that make a difference.
+            </p>
+        </section>
+
+        <section id="skills" class="card">
+            <h2>Skills & Interests</h2>
+            <ul>
+                <li>Web Development (HTML, CSS, JavaScript)</li>
+                <li>Backend Development (Python, Java)</li>
+                <li>Database Management (SQL, MongoDB)</li>
+                <li>Version Control (Git)</li>
+                <li>Problem Solving</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>E-Commerce Platform</h3>
+                <p>A full-stack e-commerce website built with React and Node.js. Features include user authentication, product catalog, and shopping cart functionality.</p>
+                <a href="https://github.com/username/ecommerce-project">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Task Management App</h3>
+                <p>A responsive task management application developed using Python and Django. Includes features for task creation, assignment, and progress tracking.</p>
+                <a href="https://github.com/username/task-manager">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Weather Dashboard</h3>
+                <p>A weather application that provides real-time weather data using OpenWeatherMap API. Built with JavaScript and Bootstrap.</p>
+                <a href="https://github.com/username/weather-dashboard">View Project</a>
+            </div>
+        </section>
+
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+            <ul class="contact-info">
+                <li>Email: <a href="mailto:princesinghsikata@gmail.com">prince.singh@example.com</a></li>
+                <li>LinkedIn: <a href="www.linkedin.com/in/royalprincesingh">linkedin.com/in/princesingh</a></li>
+                <li>GitHub: <a href="https://github.com/princesingh">github.com/princesingh</a></li>
+            </ul>
+        </section>
+    </main>
