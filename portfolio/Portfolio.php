@@ -6,13 +6,92 @@
     <title>Prince Singh | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        body {
+            background: #000 !important;
+            color: #fff;
+        }
         /* Add your CSS styles here */
         /* (Same CSS as before) */
+        .form-input {
+            background-color: #18181b;
+            color: #fff;
+            border: 1px solid #3b82f6;
+            border-radius: 0.375rem;
+            padding: 0.75rem 1rem;
+            width: 100%;
+            outline: none;
+            transition: border-color 0.2s;
+        }
+        .form-input:focus {
+            border-color: #2563eb;
+        }
+        .submit-btn {
+            background-color: #2563eb;
+            color: #fff;
+            padding: 0.75rem 2rem;
+            border-radius: 9999px;
+            font-weight: 500;
+            transition: background 0.2s;
+            border: none;
+        }
+        .submit-btn:hover {
+            background-color: #1d4ed8;
+        }
+        .card {
+            background: #18181b;
+            border-radius: 1rem;
+            box-shadow: 0 4px 24px 0 rgba(59,130,246,0.08);
+        }
+        .skill-bar {
+            background: #222;
+            border-radius: 9999px;
+            height: 0.5rem;
+            width: 100%;
+            margin-top: 0.5rem;
+            overflow: hidden;
+        }
+        .skill-progress {
+            background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+            height: 100%;
+            border-radius: 9999px;
+            transition: width 0.5s;
+        }
+        .section-title {
+            color: #fff;
+        }
+        .blue-glow {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.3;
+            z-index: 0;
+        }
+        .blue-glow-1 {
+            width: 400px;
+            height: 400px;
+            background: #2563eb;
+            top: -100px;
+            left: -100px;
+        }
+        .blue-glow-2 {
+            width: 300px;
+            height: 300px;
+            background: #3b82f6;
+            top: 60%;
+            left: 80%;
+        }
+        .blue-glow-3 {
+            width: 200px;
+            height: 200px;
+            background: #1e40af;
+            top: 80%;
+            left: 10%;
+        }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+<body class="bg-black text-white">
     <div class="blue-glow blue-glow-1"></div>
     <div class="blue-glow blue-glow-2"></div>
     <div class="blue-glow blue-glow-3"></div>
@@ -38,12 +117,12 @@
     <section id="home" class="min-h-screen flex items-center px-4 md:px-10 lg:px-20 pt-20">
         <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div class="hero-text">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Hi, I'm <span>Prince Singh</span></h1>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Hi, I'm <span class="text-blue-400">Prince Singh</span></h1>
                 <p class="text-lg md:text-xl mb-8 text-gray-300">Creating digital experiences that captivate and inspire. With a passion for clean code and beautiful design.</p>
                 <div class="flex flex-wrap gap-4 mb-8">
-                    <span class="animated-tag bg-blue-900 bg-opacity-30 px-4 py-2 rounded-full text-sm">HTML5</span>
-                    <span class="animated-tag delay-1 bg-blue-900 bg-opacity-30 px-4 py-2 rounded-full text-sm">CSS3</span>
-                    <span class="animated-tag delay-2 bg-blue-900 bg-opacity-30 px-4 py-2 rounded-full text-sm">JavaScript</span>
+                    <span class="animated-tag bg-blue-900 bg-opacity-30 px-4 py-2 rounded-full text-sm text-blue-200">HTML5</span>
+                    <span class="animated-tag delay-1 bg-blue-900 bg-opacity-30 px-4 py-2 rounded-full text-sm text-blue-200">CSS3</span>
+                    <span class="animated-tag delay-2 bg-blue-900 bg-opacity-30 px-4 py-2 rounded-full text-sm text-blue-200">JavaScript</span>
                 </div>
                 <div class="flex space-x-4">
                     <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium transition">Contact Me</a>
@@ -217,9 +296,9 @@
                     <h3 class="text-xl font-semibold mb-2">E-Commerce Platform</h3>
                     <p class="text-gray-300 mb-4">A full-featured online store with product catalog, cart, and checkout system.</p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="text-xs px-3 py-1 bg-blue-900 bg-opacity-30 rounded-full">Java</span>
-                        <span class="text-xs px-3 py-1 bg-blue-900 bg-opacity-30 rounded-full">JSP</span>
-                        <span class="text-xs px-3 py-1 bg-blue-900 bg-opacity-30 rounded-full">MySQL</span>
+                        <span class="text-xs px-3 py-1 bg-blue-900 bg-opacity-30 rounded-full text-blue-200">Java</span>
+                        <span class="text-xs px-3 py-1 bg-blue-900 bg-opacity-30 rounded-full text-blue-200">JSP</span>
+                        <span class="text-xs px-3 py-1 bg-blue-900 bg-opacity-30 rounded-full text-blue-200">MySQL</span>
                     </div>
                     <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
                         View Project <i class="fas fa-arrow-right ml-2"></i>
@@ -232,8 +311,8 @@
                     <h3 class="text-xl font-semibold mb-2">Proctor AI</h3>
                     <p class="text-gray-300 mb-4">An AI-based proctoring system for online examinations.</p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="text-xs px-3 py-1 bg-blue-900 bg-opacity-30 rounded-full">AI</span>
-                        <span class="text-xs px-3 py-1 bg-blue-900 bg-opacity-30 rounded-full">Machine Learning</span>
+                        <span class="text-xs px-3 py-1 bg-blue-900 bg-opacity-30 rounded-full text-blue-200">AI</span>
+                        <span class="text-xs px-3 py-1 bg-blue-900 bg-opacity-30 rounded-full text-blue-200">Machine Learning</span>
                     </div>
                     <a href="#" class="text-blue-400 hover:text-blue-300 flex items-center">
                         View Project <i class="fas fa-arrow-right ml-2"></i>
